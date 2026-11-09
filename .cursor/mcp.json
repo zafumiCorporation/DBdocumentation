@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "ai-assistant-hybrid-faang": {
+      "command": "node",
+      "args": [
+        "C:/Users/yonat/OneDrive/Documentos/CursoPostgreSQL-ConsultasAvanzadas-AIAssistant/mcp-server/dist/server.js"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://neondb_owner:npg_UuZ6VALmpX7C@ep-curly-violet-ay7873tw-pooler.c-5.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
+        "ROOT_DIR": "C:/Users/yonat/OneDrive/Documentos/CursoPostgreSQL-ConsultasAvanzadas-AIAssistant"
+      }
+    }
+  }
+}

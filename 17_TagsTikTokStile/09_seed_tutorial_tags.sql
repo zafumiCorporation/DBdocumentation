@@ -1,0 +1,20 @@
+INSERT INTO public.tutorial_tags (tutorial_id, tag_id, created_by) VALUES
+    (1, 9, 1),
+    (2, 4, 1),
+    (2, 9, 1),
+    (3, 5, 1),
+    (3, 9, 1),
+    (4, 1, 2),
+    (4, 2, 2),
+    (4, 3, 2),
+    (4, 8, 2),
+    (5, 1, 2),
+    (5, 10, 2),
+    (6, 9, 2),
+    (6, 14, 2),
+    (6, 6, 2),
+    (7, 9, 3),
+    (8, 10, 3),
+    (9, 10, 4),
+    (10, 9, 4)
+ON CONFLICT (tutorial_id, tag_id) DO NOTHING;

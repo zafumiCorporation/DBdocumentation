@@ -1,0 +1,36 @@
+{
+  "name": "ai-assistant-mcp-hybrid-readonly",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP Server Hibrido Read-Only para AI Assistant Desktop - Expone Filesystem + Postgres",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector node dist/server.js",
+    "glosa:watch": "node glosa-worker/watch.mjs", 
+    "glosa:once": "node glosa-worker/ingest.mjs", 
+    "glosa:lookup": "node glosa-worker/lookup.mjs",
+    "glosa:reconcile": "node glosa-worker/reconcile.mjs"
+  },
+  "dependencies": {
+    "@cursor/sdk": "^1.0.31",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "chokidar": "^5.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^5.2.1",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.14.10",
+    "@types/pg": "^8.11.6",
+    "typescript": "^5.9.3"
+  }
+}
